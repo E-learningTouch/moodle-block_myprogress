@@ -9,7 +9,6 @@ It is also possible to enable/disable the course, group, and cohort progression 
 This plugin was developped in 2023 by **Willian Mano** (https://github.com/willianmano) from [Conecti.me](https://conecti.me/)
 
 This plugin was kindly sponsored by **Luiggi Sansonetti**.
-Thank you very much for supporting Moodle community and the open-source initiative.
 
 This plugin is now maintained by **[Moodle's Premium Partner E-Learning touch'](https://www.elearningtouch.com/)**.
 
