@@ -147,6 +147,14 @@ class progress {
         }
 
         if (!is_null($cohortstoshow)) {
+            if (!is_array($cohortstoshow)) {
+                if (strpos((string)$cohortstoshow, ',') !== false) {
+                    $cohortstoshow = explode(',', $cohortstoshow);
+                } else {
+                    $cohortstoshow = [$cohortstoshow];
+                }
+            }
+
             $usercohorts = array_filter($usercohorts, function($cohort) use ($cohortstoshow) {
                 return in_array($cohort->id, $cohortstoshow);
             });
