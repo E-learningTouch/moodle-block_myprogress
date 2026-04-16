@@ -62,12 +62,8 @@ class block_myprogress_edit_form extends block_edit_form {
         $cohortsutil = new \block_myprogress\util\cohort();
         $cohorts = $cohortsutil->get_all();
 
-        $mform->addElement('autocomplete', 'config_cohorts', get_string('cohortselection', 'block_myprogress'), $cohorts);
-        $mform->getElement('config_cohorts')->setMultiple(true);
+        $mform->addElement('autocomplete', 'config_cohorts', get_string('cohortselection', 'block_myprogress'), $cohorts, ['multiple' => true]);
         $mform->hideIf('config_cohorts', 'config_showcohortaverage', 0);
 
-        if ($cohorts) {
-            $mform->getElement('config_cohorts')->setSelected(array_keys($cohorts));
-        }
     }
 }
