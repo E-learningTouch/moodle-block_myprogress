@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->requires = 2011120511;
-$plugin->version = 2024042400;
-$plugin->release = '1.0.7';
+$plugin->version = 2026041600;
+$plugin->release = '1.1.0';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'block_myprogress';
 $plugin->supported = [401, 502];
